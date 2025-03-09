@@ -31,7 +31,15 @@ SECRET_KEY = 'django-insecure-eai*5b5x4$o-4fu9ti6y9)z9zq2d^v+$$qe!7u+p0rn0nq!znd
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['*']
+ALLOWED_HOSTS = ['*', "http://localhost:3000","https://multicredito.demoservices.online"]
+
+CORS_ORIGIN_WHITELIST = [
+    "https://multicredito.demoservices.online",
+]
+CORS_ORIGIN_ALLOW_ALL = True
+CORS_ALLOW_CREDENTIALS = True
+CSRF_TRUSTED_ORIGINS = ["https://multicredito.demoservices.online"]
+
 
 
 # Application definition
